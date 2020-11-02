@@ -1,0 +1,123 @@
+body{
+    background-color:rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+}
+header{
+background-color:#757575; color: rgb(255, 255, 255);
+height:4em;
+line-height:2.5em}
+
+footer{
+background-color:#757575; color: rgb(255, 255, 255);
+height:4em;
+line-height:4em;
+margin:0;
+padding-left:2em;
+color: rgb(255, 255, 255); font-size:1em;
+}
+
+header h3{
+display:inline-block;
+margin:0;
+padding-left:2em
+}
+header nav[id="main-nav"] {
+    display:inline-block;    
+}
+header nav[id="main-nav"] ul {
+    list-style-type: none;
+}
+
+header nav[id="main-nav"] ul li {
+    display: inline-block;  color: rgb(255, 255, 255); font-size:1em; font-weight: 600; padding-right:1.25em;
+}
+
+section{
+    padding: 1em 2em;
+    background-color:rgba(200,200,200,0.1);
+    border: solid 1px white;
+}
+
+
+main[id="index-main"] section:first-child { }
+/* a hiearchiában levő első section-okat hívja le*/
+
+section[class="img-container"] img {
+width: 40%;
+margin: 2%;
+}
+
+div[class="behavior-box"] {
+display: inline-block;
+width: 25%;
+margin: 2%;
+background-color: white;
+text-align: center;
+height:5em; ;
+line-height: 1.5em;
+font-size: 1em;
+border-radius: 5px;
+border: solid 1px white;
+box-shadow: 0 0 3px black;
+}
+
+
+
+
+/* works page */
+
+section[id="works-section"] article {
+    border-bottom: solid 2px white;
+    margin-bottom: 2em;
+}
+
+section[id="works-section"] article img {
+    width:25%;
+    margin-right: 2%;
+    
+}
+section[id="works-section"] article div {
+    width:70%;
+    display:inline-block;
+    vertical-align: top;
+    
+}
+
+/* works page */
+
+section[class="gallery-container"] img {
+    width:27%;
+    margin:1%;
+    
+}
+
+aside[class="side-image"] {
+    margin-top:1em
+}
+article[class="bio"] {
+    margin-top:1em
+}
+
+
+/* mobile view*/
+
+@media screen and (max-width: 576px) {
+    div[class="behavior-box"] {
+        width:100% }
+    div[class="gallery-container"] img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }}
+
+/* tablet view*/
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+        div[class="behavior-box"] {
+            width:100% }
+        div[class="gallery-container"] img {
+            width: 47%;
+            margin-left: 0;
+            margin-right: 0;
+        }}
